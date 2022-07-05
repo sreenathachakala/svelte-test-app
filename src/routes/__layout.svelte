@@ -13,9 +13,16 @@
 	import type { Option } from '$lib/sidenav/index.svelte';
 	import DeployRules from 'carbon-icons-svelte/lib/DeployRules.svelte';
 	import Home from 'carbon-icons-svelte/lib/Home.svelte';
+	import UserMultiple from "carbon-icons-svelte/lib/UserMultiple.svelte";
 	import FolderOpen from 'carbon-icons-svelte/lib/FolderOpen.svelte';
 
 	const navOptions: Option[] = [
+		{
+			id: "users", 
+			label: "Users", 
+			route: "/users", 
+			icon: UserMultiple
+		},
 		{
 			id: 'deployments',
 			label: 'Deployments',
